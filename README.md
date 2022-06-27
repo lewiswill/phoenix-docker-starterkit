@@ -10,7 +10,7 @@ Ensure that IP address found in dev.exs is changed from `{127, 0, 0, 1}` to `{0,
 2) Postgrex.Protocol error will show
 3) run docker-compose run web_app mix ecto.create, to create a DB connection
 
-# AppStarterKit
+# AppStarterKit (Ignore If using Docker)
 
 To start your Phoenix server:
 
@@ -22,7 +22,7 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
-## Learn more
+# Learn more
 
   * Official website: https://www.phoenixframework.org/
   * Guides: https://hexdocs.pm/phoenix/overview.html
