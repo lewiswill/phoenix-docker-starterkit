@@ -1,6 +1,8 @@
 # phoenix-docker-starterkit
 
-loosely based off this helpful dev.to post [blog post](https://dev.to/hlappa/development-environment-for-elixir-phoenix-with-docker-and-docker-compose-2g17)
+Aim of this repo is to provide a useful dockerised starter kit, that you can just fire up and begin messing with Elixir/Phoenix.
+
+Based off this helpful dev.to post [blog post](https://dev.to/hlappa/development-environment-for-elixir-phoenix-with-docker-and-docker-compose-2g17)
 
 Ensure that IP address found in dev.exs is changed from `{127, 0, 0, 1}` to `{0, 0, 0, 0}` in order to reach the phoenix server within docker container.
 
