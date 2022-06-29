@@ -1,6 +1,6 @@
 # phoenix-docker-starterkit
 
-Aim of this repo is to provide the bare minimum setup to provide a containerised Phoenix web server with PostgreSQL database
+Example of a containerised Phoenix web server with PostgreSQL database
 
 Based off this helpful dev.to post [blog post](https://dev.to/hlappa/development-environment-for-elixir-phoenix-with-docker-and-docker-compose-2g17)
 
@@ -9,7 +9,7 @@ Based off this helpful dev.to post [blog post](https://dev.to/hlappa/development
 3. creare .env file and populate with `DATABASE_URL=postgres://postgres:postgres@db:5432/postgres`
 4. 1. locate `/config/dev.exs`
    2. change the IP address from `{127, 0, 0, 1}` to `{0, 0, 0, 0}` in order to reach the phoenix server within docker container.
-   3. in same dev.exs file, locate `config :APP_NAME, APP_NAME.Repo` and remove `username: "", password: "", hostname: "", database: ""` and replace with `url: System.get_env("DATABASE_URL")`
+   3. in same dev.exs file, locate `config :app_starter_kit, AppStarterKit.Repo` and remove `username: "", password: "", hostname: "", database: ""` and replace with `url: System.get_env("DATABASE_URL")`
 5. run `docker compose up`
 6. If `Postgrex.Protocol error` shows, run `docker-compose run web_app mix ecto.create` to initiate the DB connection between phoenix and db container
 
