@@ -1,6 +1,6 @@
 # phoenix-docker-starterkit
 
-Example of a containerised Phoenix web server with PostgreSQL database
+Example of a containerised Phoenix web server (app_starter_kit) with PostgreSQL database
 
 Based off this helpful dev.to post [blog post](https://dev.to/hlappa/development-environment-for-elixir-phoenix-with-docker-and-docker-compose-2g17)
 
